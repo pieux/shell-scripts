@@ -1,0 +1,4 @@
+cd ~/.m2/repository
+find  . -name "*lastUpdate*" -exec dirname {} ';' > toremove
+sed 's/^/"/g' toremove | sed 's/$/"/g' | xargs rm -r
+rm toremove

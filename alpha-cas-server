@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ssh dianping@192.168.214.124 -p 58422
